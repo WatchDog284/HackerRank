@@ -57,17 +57,15 @@ int main()
     for (int i = n - 1; i >= 0; i--) {
         printf("%d ", *(arr + i));
 
-        if (i != 0){
-            printf("");
-        }
+        // No need for an empty printf statement
     }
 
-    return 0;
-
-    free(arr_temp);
-    free(arr);
-    arr_temp = NULL;
-    arr = NULL;
+        free(arr_temp);
+        free(arr);
+        arr_temp = NULL;
+        arr = NULL;
+    
+        return 0;
     }
 
 char* readline() {
