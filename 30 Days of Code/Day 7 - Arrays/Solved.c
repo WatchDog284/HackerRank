@@ -1,3 +1,26 @@
+/**
+ * This program reads an integer `n` and an array of `n` integers from the input,
+ * then prints the array in reverse order.
+ *
+ * Steps:
+ * 1. Read an integer `n` from the input, which represents the size of the array.
+ * 2. Read a space-separated string of integers from the input.
+ * 3. Split the input string into individual integers and store them in a dynamically allocated array.
+ * 4. Traverse the array in reverse order and print each integer.
+ * 5. Free all dynamically allocated memory to avoid memory leaks.
+ *
+ * Functions:
+ * - `readline`: Reads a line of input from the standard input.
+ * - `ltrim`: Trims leading whitespace from a string.
+ * - `rtrim`: Trims trailing whitespace from a string.
+ * - `split_string`: Splits a string into an array of strings based on spaces.
+ * - `parse_int`: Converts a string to an integer, exiting the program if the conversion fails.
+ *
+ * Notes:
+ * - Memory is dynamically allocated for the array and split strings, and it is freed before the program exits.
+ * - The program ensures proper handling of input strings by trimming and splitting them.
+ */
+
 #include <assert.h>
 #include <ctype.h>
 #include <limits.h>
