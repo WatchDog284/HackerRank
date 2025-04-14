@@ -1,3 +1,24 @@
+/**
+ * This program calculates the total cost of a meal, including tip and tax, 
+ * and prints the rounded total cost. Below are the steps performed by the program:
+ *
+ * 1. Read the meal cost, tip percentage, and tax percentage as input from the user.
+ * 2. Parse the input values to their respective data types:
+ *    - `meal_cost` is parsed as a double.
+ *    - `tip_percent` and `tax_percent` are parsed as integers.
+ * 3. Pass the parsed values to the `solve` function.
+ * 4. Inside the `solve` function:
+ *    - Calculate the tip amount as `(meal_cost * tip_percent) / 100`.
+ *    - Calculate the tax amount as `(meal_cost * tax_percent) / 100`.
+ *    - Compute the total cost by summing `meal_cost`, `tip`, and `tax`.
+ *    - Round the total cost to the nearest integer and print it.
+ * 5. Utility functions are provided for:
+ *    - Reading input (`readline`).
+ *    - Trimming leading and trailing whitespace (`ltrim` and `rtrim`).
+ *    - Parsing strings to double and integer values (`parse_double` and `parse_int`).
+ * 6. The program ensures proper memory allocation and handles invalid input by exiting with an error.
+ */
+
 #include <assert.h>
 #include <ctype.h>
 #include <limits.h>

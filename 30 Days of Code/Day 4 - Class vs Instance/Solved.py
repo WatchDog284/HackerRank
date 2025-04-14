@@ -1,3 +1,22 @@
+"""
+This script demonstrates the use of a class to model a person's age and behavior based on their age.
+
+Define the Person class:
+- The __init__ method initializes the person's age and checks if the initial age is valid.
+- The amIOld method determines the age category of the person and prints a corresponding message.
+- The yearPasses method increments the person's age by one year.
+
+Read the number of test cases:
+- Input: number of test cases.
+
+For each test case:
+- Input the initial age of the person.
+- Create a new Person object with the given age.
+- Print the age category of the person.
+- Simulate the passage of 3 years and print the new age category after 3 years.
+- Print a blank line for separation between test cases.
+"""
+
 class Person:
     def __init__(self,initialAge):
         # Add some more code to run some checks on initialAge

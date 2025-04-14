@@ -1,3 +1,24 @@
+/**
+ * This program determines whether a given integer `N` is "Weird" or "Not Weird"
+ * based on specific conditions. Below are the steps performed in the program:
+ *
+ * 1. Read an integer input `N` from the user.
+ * 2. Check if `N` is odd:
+ *    - If `N` is odd, print "Weird".
+ * 3. If `N` is even, evaluate the following conditions in order:
+ *    - If `N` is in the range [2, 5], print "Not Weird".
+ *    - If `N` is in the range [6, 20], print "Weird".
+ *    - If `N` is greater than 20, print "Not Weird".
+ * 4. The conditions are evaluated in the order of precedence to ensure the correct
+ *    output is printed.
+ * 5. Helper functions are used to handle input processing:
+ *    - `readline()` reads a line of input from the user.
+ *    - `ltrim()` trims leading whitespace from a string.
+ *    - `rtrim()` trims trailing whitespace from a string.
+ *    - `parse_int()` converts a string to an integer and exits the program if the
+ *      conversion fails.
+ */
+
 #include <assert.h>
 #include <ctype.h>
 #include <limits.h>

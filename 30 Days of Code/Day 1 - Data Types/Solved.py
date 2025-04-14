@@ -1,3 +1,23 @@
+"""
+This script demonstrates basic operations with integers, floating-point numbers, and strings.
+It performs the following steps:
+
+1. Declare and initialize three variables:
+    - An integer `i` with a value of 4.
+    - A floating-point number `d` with a value of 4.0.
+    - A string `s` with a value of 'HackerRank '.
+
+2. Read user input for:
+    - An integer, which is stored in `myInt`.
+    - A floating-point number, which is stored in `myDouble`.
+    - A string, which is stored in `myString`.
+
+3. Perform the following operations:
+    - Add the integer `i` to `myInt` and print the result.
+    - Add the floating-point number `d` to `myDouble` and print the result.
+    - Concatenate the string `s` with `myString` and print the result.
+"""
+
 i = 4
 d = 4.0
 s = 'HackerRank '
