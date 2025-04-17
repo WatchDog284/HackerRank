@@ -1,5 +1,5 @@
 # include <stdio.h>
-#include <stdlib.h>
+# include <stdlib.h>
 
 // Function to sort an array using bubble sort
 void sort(int arr[], int n) {
