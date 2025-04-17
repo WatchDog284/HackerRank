@@ -1,31 +1,9 @@
-import statistics  # Importing the statistics module (not used in this script)
-from collections import Counter  # Importing Counter to calculate the mode
+import numpy as np  # Importing the NumPy library for numerical computations
+from scipy import stats  # Importing the stats module from SciPy for statistical calculations
 
-# Read the number of elements in the array
-n = int(input())
+n = int(input())  # Reading the size of the list from user input
+arr = list(map(int, input().split()))  # Reading a space-separated list of integers and converting it to a Python list
 
-# Read the array elements, split them into integers, and store them in a list
-arr = list(map(int, input().split()))
-
-# Sort the array in ascending order
-arr.sort()
-
-# Calculate the mean (average) of the array
-mean = sum(arr) / n
-
-# Calculate the median
-# If the number of elements is odd, take the middle element
-# If even, take the average of the two middle elements
-median = arr[n // 2] if n % 2 != 0 else (arr[n // 2 - 1] + arr[n // 2]) / 2
-
-# Calculate the mode (most frequent element) using Counter
-mode = Counter(arr).most_common(1)[0][0]
-
-# Print the mean rounded to 1 decimal place
-print(f"{mean:.1f}")
-
-# Print the median rounded to 1 decimal place
-print(f"{median:.1f}")
-
-# Print the mode
-print(mode)
+print(np.mean(arr))  # Calculating and printing the mean (average value) of the list
+print(np.median(arr))  # Calculating and printing the median (middle value) of the list
+print(int(stats.mode(arr)[0]))  # Calculating and printing the mode (most frequent value) of the list
